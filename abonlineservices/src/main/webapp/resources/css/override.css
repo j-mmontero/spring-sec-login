@@ -1,0 +1,575 @@
+/**************************************************/
+/*                    WebFonts                    */
+/**************************************************/
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Regular-webfont.woff') format('woff'),
+         url('OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/**************************************************/
+/*                     Layout                     */
+/**************************************************/
+body {
+	border-top:40px solid #fff;
+	background:#fff;
+}
+
+/*Contains all elements within the body*/
+.wrapper {
+	/*Fix for iPhones width */min-width:inherit; /*inherit for IE*/
+	/* Never make webpage less than 1100px wide */
+	max-width:100%;
+	margin:0 auto;
+	padding:0px 0em 0px 0em;
+}
+
+/*Contain all data area items other than Transactions on Account Page*/
+main > .grid {
+	margin:0 auto;
+	max-width:1280px;
+}
+
+main{
+	padding-top:10px;
+	padding-bottom:30px;
+}
+
+/*Contain all Transactions items, if needed copy the same styles from 'main' here*/
+section div#transactions {
+	margin:0 auto;
+	max-width:1280px;
+}
+
+/*Contains the Utility Navigation, Banner, and Primary Navigation*/
+header {
+	margin:0 auto;
+	max-width:100%;
+	box-shadow: 0px 6px 10px #eee;
+	background:#fff;
+}
+
+header .grid{
+	margin:0 auto;
+	max-width:1280px;
+}
+
+/*Banner*/
+header div.grid__unit ~ div.grid__unit:nth-child(2) {
+
+}
+
+/*Define Logo Here*/
+.bank-branding {
+	/*Resets positioning left in by Development - kept in for In House banks*/
+	position:inherit;
+	background:url('ABlogo.png') no-repeat;
+	height:125px;
+	width:325px;
+	margin-top:5px;
+}
+
+/*Used to position Banner Ads*/
+ul.img-responsive.slides.cycle-slideshow {
+	
+}
+
+/*Used around data areas*/
+.content--block{
+    background-color:#ffffff;
+	color:#000;
+}
+
+/*Additional Selectors For Data Tables*/
+.content--block, #table--transactions, .checkfree-widget-container{
+
+}
+div[data-bind*="hasFinishedProcessing"], #tranLegend {
+
+}
+#transfer .content--block, #download .content--block, div.dropdown  .content--block{
+
+}
+div.dropdown  .content--block {
+
+}
+
+/*Padding For Checkfree Widget*/
+.checkfree-widget-container {
+	margin:0px;
+	padding: 10px 0px 5px 0px;
+}
+
+/*Home Page Advertisement*/
+.ad-container iframe{
+	display:none;
+}
+.ad-container {
+	width:100%;
+	height:;
+	background-image:;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+/**************************************************/
+/*                     Font                       */
+/**************************************************/
+/*Fonts should only be defined as pixels on the html element. Other elements should use REM units.*/
+html {
+	font-size:14px;
+}
+body {
+	font-family: 'OpenSansRegular', Arial, Verdana, Helvetica, sans-serif;
+	font-size:1rem;
+}
+
+/*Link colors. To target data section only add main in front of the selector*/
+a, a:visited {
+	color:#124b8e;
+	text-decoration:underline;
+}
+a:hover, a:active {
+	color:#124b8e;
+	
+}
+p {
+    color:#888;
+}
+a.btn--acctCreate {
+	font-size:1rem;
+	color:#e04622;
+}
+
+/*Negative Account Balance*/
+.neg--balance {
+	color:#ff0000;
+}
+
+/*Action Buttons*/
+.btn--default {
+	background-color:#e04622;
+	color:#ffffff;
+	text-transform:uppercase;
+	border-radius:0px;
+}
+.btn--default:hover {
+	background-color:#e56244;
+	color:#ffffff;
+	text-transform:uppercase;
+}
+.btn--link {
+	color:#e04622;
+}
+.btn--link:hover {
+	color:#e04622;
+}
+.btn--primary, a.btn--primary {
+	background:#fff;
+	border:2px solid #e04622;
+	color:#2e353e;	
+	border-radius:0px;
+	text-transform:uppercase;
+}
+.btn--primary:hover, a.btn--primary:hover {
+	background:#e04622;
+	color:#ffffff;
+	border:2px solid #e04622;
+}
+.btn--thead, .header--non-sortable, .table--underlined th {
+	color:#ffffff;
+}
+
+/*Alerts*/
+.badge {
+	background:#007ec2;
+	color:#ffffff;
+}
+
+/*MFA*/
+.mfa-divider {
+	background:#dfdfdf;
+}
+.mfa-divider:before {
+	background:#ffffff;
+}
+
+/*Data Tables*/
+.text--plain {
+	color:#888;
+}
+.slat {
+	border-color:#dfdfdf;
+}
+.table--underlined>thead>tr>th, .table--underlined>tbody>tr>th, .table--underlined>tbody>tr>td {
+	border-bottom:1px solid #dee2e6;
+}
+.table--underlined>thead tr:last-child th {
+	border-bottom-width:2px;
+}
+.table--underlined>tbody tr:last-child td, .table--underlined .no-border {
+	border-bottom-width:0;
+}
+.table--underlined>tfoot td {
+	border-top:1px solid #dfdfdf;
+}
+thead th {
+	background: #212529;
+}
+
+/*Data Table Odd/Even Row Background Colors*/
+#table--transactions tbody tr:nth-child(odd), .table--trans-recent tbody tr:nth-child(odd), #scheduled-transfers .table--underlined tbody tr:nth-child(odd), #stopPaymentList .table--underlined tbody tr:nth-child(odd), .table--underlined tbody tr:nth-child(odd) {
+	/*stuff*/
+	background:#f2f2f2;
+}
+#table--transactions tbody tr:nth-child(even), .table--trans-recent tbody tr:nth-child(even), #scheduled-transfers .table--underlined tbody tr:nth-child(even), #stopPaymentList .table--underlined tbody tr:nth-child(even), .table--underlined tbody tr:nth-child(even) {
+	/*stuff*/
+	background:#fff;
+}
+
+.arrow {
+	border-color:#dfdfdf;
+}
+.arrow--top-right:after {
+	border-bottom-color:#dfdfdf;
+}
+
+/*OPTIONAL FONTS*/
+/*Data Area Header Dropdown - Account page*/
+main div.grid:nth-child(1)  div.grid__unit:nth-child(1) div.dropdown ul li , main div.grid:nth-child(1)  div.grid__unit:nth-child(1) div.dropdown ul li a {
+
+}
+main div.grid:nth-child(1)  div.grid__unit:nth-child(1) div.dropdown ul li , main div.grid:nth-child(1)  div.grid__unit:nth-child(1) div.dropdown ul li a:hover {
+
+}
+main div.grid:nth-child(1)  div.grid__unit:nth-child(1) div.dropdown ul li {
+
+}
+main div.grid:nth-child(1)  div.grid__unit:nth-child(1) div.dropdown ul li:hover {
+
+}
+main div.grid:nth-child(1)  div.grid__unit:nth-child(1) div.dropdown ul li:hover a{
+
+}
+input, select {
+
+}
+h1, h2, h3, .h1, .h2, .h3 {
+
+}
+h4, h5, h6, .h4, .h5, .h6 {
+
+}
+h1, .h1 {
+	font-size:1.71rem;
+}
+h2, .h2 {
+	font-size:1.43rem;
+}
+h3, .h3 {
+	font-size:1.28rem;
+}
+h4, .h4 {
+	font-size:1.14rem;
+}
+h5, .h5 {
+	font-size:1rem;
+}
+h6, .h6 {
+	font-size:.86rem;
+}
+
+/*Various alerts messages */
+.alert--error {
+	background:#fbeae9;
+	border-color:#f7d6d3;
+	color:#ad3123;
+}
+.alert--info {
+	background:#d9edf7;
+	border-color:#bce8f1;
+	color:#2e6a87;
+}
+.alert--success {
+	background:#dff0d8;
+	border-color:#d6e9c6;
+	color:#3a703c;
+}
+.alert--warning {
+	background:#fffdd5;
+	border-color:#ffe89e;
+	color:#8c6b33;
+}
+.text--error {
+	color:#ad3123;
+}
+.text--info {
+	color:#2e6a87;
+}
+.text--muted {
+	color:#999;
+}
+.text--success {
+	color:#3a703c;
+}
+.text--warning {
+	color:#8c6b33;
+}
+
+/***** use this section when you need to target the eStatement Terms and Conditions link *****/
+section a[href*="ElectronicStatements"] {}
+
+
+/**************************************************/
+/*            Utility Navigation                  */
+/**************************************************/
+/*Position of Utility Section*/
+header div.grid:nth-child(1)  div.grid__unit:nth-child(1) {
+	margin-top:-40px;
+}
+
+/*Welcome Message*/
+.message--welcome {
+	padding-top:8px;
+}
+.message--welcome p {
+	color:#444;
+	margin-top:-5px;
+}
+
+/*Utility Navigation Buttons*/
+.nav--utility {
+
+}
+.nav--utility li {
+
+}
+.nav--utility a{
+	color:#444;
+}
+.nav--utility a:hover {
+
+}
+
+/**************************************************/
+/*            Primary Navigation                  */
+/**************************************************/
+/*Primary Navigation Positioning*/
+header div.grid__unit ~ div.grid__unit:nth-child(3) {
+	margin-top:-110px;
+	height:50px;
+}
+
+
+.nav--primary {
+	max-width:100%;
+	float:right;
+}
+
+/*Navigation Buttons*/
+.nav--primary li {
+
+}
+.nav--primary li a{
+	height:130px;
+	margin-top:-20px;
+	padding-top:50px!important;
+	color:#444;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:12px;
+}
+.nav--primary li.is--selected a{
+
+}
+.nav--primary li a:hover {
+	color:#fff;
+	background:#e04622;
+}
+.nav--primary a {
+
+}
+
+/**************************************************/
+/*            Account Navigation                  */
+/**************************************************/
+.nav--account {
+
+}
+.nav--account li a {
+	background:#fff;
+	border:2px solid #e04622;
+	color:#2e353e;	
+	border-radius:0px!important;
+	text-transform:uppercase;
+}
+.nav--account li a:hover {
+	background:#e04622;
+	border:2px solid #e04622;
+	color:#fff;
+}
+.nav--account li.is--selected a {
+
+}
+
+/**************************************************/
+/*                   Footer                       */
+/**************************************************/
+.page--footer {
+	background-color:#e9eff2;
+	padding-top:50px;
+}
+footer nav{
+	max-width:1280px;
+	margin:0 auto;
+}
+#footerText{
+	max-width:1280px;
+	margin:0 auto;
+}
+footer p {
+	color:#ababab;
+}
+footer p.float--left.padding-left--add  {
+	color:#231f20;
+}
+footer a, footer a:visited{
+	color:#777;
+	font-size:14px;
+}
+footer a :hover{
+	color:#888;
+	text-decoration:none;
+}
+
+
+/**************************************************/
+/*                Media Queries                   */
+/**************************************************/
+@media screen and (max-width: 785px){
+	/*Position of Utility Section*/
+header div.grid:nth-child(1)  div.grid__unit:nth-child(1) {
+	border-bottom:1px solid #888;
+}
+		/*Primary Navigation Positioning*/
+	header div.grid__unit ~ div.grid__unit:nth-child(3) {
+		margin-top:0px;
+		height:auto;
+		border-top:1px solid #888;
+	}
+
+	.nav--primary {
+		max-width:100%;
+		float:left;
+	}
+	.nav--primary li a{
+		height:auto;
+		margin-top:0px;
+		padding-top:10px!important;
+	}
+	.nav--primary li.is--selected a{
+
+	}
+	.nav--primary li a:hover {
+		color:#fff;
+		background:#e04622;
+	}
+	.bank-branding {
+		background-position:center 0px;
+		width:100%;
+		height:130px;
+	}
+}
+@media screen and (max-width: 705px){
+		/*Position of Utility Section*/
+	header div.grid:nth-child(1)  div.grid__unit:nth-child(1) {
+		padding-left:0px!important;
+		border-bottom:1px solid #888;
+	}
+	.message--welcome {
+		width:100%; 
+		float:none;
+	}
+	.message--welcome p:first-child {
+		float:left;
+		padding-left:10px;
+	}
+	.message--welcome p:last-child {
+		float:right;
+	}
+	
+}
+@media screen and (max-width: 599px) {
+	html {
+		font-size:12px;
+	}
+	
+	/*Add "mobile" logo here*/
+	.bank-branding {
+
+	}
+	.wrapper {
+		min-width:90%;
+		padding:0px;
+	}
+	main {
+		padding:10px;
+	}
+		/*Primary Navigation Positioning*/
+	header div.grid__unit ~ div.grid__unit:nth-child(3) {
+		height:auto;
+		border-top:1px solid #888;
+		padding-left:0px;
+	}
+	.nav--primary {
+		width:100%;
+		text-align:center;
+	}
+	.nav--primary li {
+		border-bottom: 1px solid #888;
+	}
+}
+@media screen and (max-width: 360px) {
+	html {
+		font-size:10px;
+	}
+	thead th, td {
+		padding: 0px 2px;
+		font-size: 1rem;
+	}
+}
+
+/* Print CSS */
+@media print {
+	html, body, h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6 {margin:0; padding:0; border:none;}
+  /* Font Adjustments */
+	html {font-size:9pt;}
+	body {font-family:Arial, Helvetica, Verdana, sans-serif;	font-size:1rem; line-height:1.5rem;}
+	h1, .h1 {font-size:1.3rem;}
+	h2, .h2  {font-size:1.2rem;}
+	h3, .h3 {font-size:1.1rem;}
+	h4, .h4, h5, .h5, h6, .h6  {font-size:1rem;}
+	a , a:visited {color:#000; text-decoration:underline;}
+	p {font-size:1rem;}
+	a.btn--acctCreate {font-size:1rem;}
+	.btn--default {font-size:1rem; border:1px #888 solid;}
+	.btn--link {font-size:1rem;}
+	.btn--primary, a.btn--primary {font-size:1rem; border:1px #888 solid;}
+	th, td {padding:3px 6px;}
+  /* Elements */
+	/* Header (Hides Logo and Banner Ads) */header{/*display:none;*/} 
+	/* Logo */.bank-branding {position:initial; margin:0; padding:0 0 5px 0;}
+	/* Enables Logo for Print Page */#logo {display:inherit;}
+	/* Banner Ads */.slides {display:none;} 
+	/* Footer */.page--footer{display:none;}  
+	
+  /* Additional Customizations */
+	div#transactions {padding:0;} /* Remove padding for Transactions Div */
+	[data-ui-component="account-details"] {margin:0;} /* Remove bottom margin for Account Info */
+}
